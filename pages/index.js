@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <p className="text-gray-700 text-3xl mb-16 font-bold">Dashboard</p>
+
+      <div className="grid lg:grid-cols-3 gap-5 mb-16">
+        <div className="rounded bg-white h-40 shadow-sm"></div>
+        <div className="rounded bg-white h-40 shadow-sm"></div>
+        <div className="rounded bg-white h-40 shadow-sm"></div>
+      </div>
+      <div className="grid col-1 bg-white h-96 shadow-sm"></div>
     </>
-  )
+  );
 }
+
+export default Home;
